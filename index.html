@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="mycss.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- This is my popup -->
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div id="myContent" class="content">
+            <h1 style="font-size: 1.6rem;">Welcome to Tic Tac Toe</h1>
+            <form onsubmit="return false" class="mt-4" >
+              <div class="form-group">
+                <label for="myInput">Player 1</label>
+                <input type="text" class="form-control" id="player_1" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="myInput">Player 2</label>
+                <input type="text" class="form-control" id="player_2" placeholder="Enter your name">
+              </div>
+              <button type="button" class="btn btn-success" id="inplay">Start Tictactoe</button>
+            </form>
+        </div>
+      </div>
+      <!-- #/The popup end -->
+
+      <!-- This is my jumbotron -->
+      <div class="row">
+        <div class="col-6 m-auto py-2">
+          <div class="jumbotron py-3">
+            <h1 class="display-4"><strong class="text-success">Project </strong>{Tic Tac Toe}</h1>
+            <hr class="my-4 bg-dark">
+            <p class="text-secondary">Welcome to your tic tac toe projet!</p>
+            <button class="btn btn-secondary" type="button" name="button" onclick="location.reload()">Restart</button>
+            <button class="replay btn btn-success" type="button" name="button">Replay</button>
+          </div>
+        </div>
+      </div>
+      <!-- #/The jumbotron end -->
+
+      <!-- This is the tic tac toe board -->
+      <div class="row">
+        <div class="col-12">
+          <div class="col-6 m-auto bg-success myname">
+            <p class="text-white" style="text-align: center;">Let's start the game</p>
+          </div>
+        </div>
+        <div class="col-6 m-auto">
+          <table class="">
+            <tbody>
+            <tr>
+              <td id="one"></td>
+              <td id="two"></td>
+              <td id="three"></td>
+            </tr>
+            <tr>
+              <td id="four"></td>
+              <td id="five"></td>
+              <td id="six"></td>
+            </tr>
+            <tr>
+              <td id="seven"></td>
+              <td id="eight"></td>
+              <td id="nine"></td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+      <!-- #/The tic tac toe board end -->
+
+    </div>
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
